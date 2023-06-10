@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;800&display=swap');
+/*font-family: 'Epilogue', sans-serif;*/
+/*Global*/
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 1.0rem;
+    --font_padrao:'Epilogue'
+}
+/*Corpo*/
+body{
+    background-color: #28293E;
+}
+h1{
+    text-align: center;
+    font: bolder 4.0rem var(--font_padrao);
+    color: #FFFFFF;
+
+    margin-bottom: 8.0rem;
+}
+p{
+    text-align: center;
+    font: normal 1.6rem var(--font_padrao);
+    color: #FFFFFF;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    color: #BBB3E6;
+
+    margin-top: 10.0rem;
+    margin-bottom: 2.5rem;
+}
+/*Section*/
+main{
+    min-width: 375px;/*em largura e altura não usa rem*/
+    margin: 0px auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section{
+    position: relative;
+
+    min-width: 330px;
+    padding: 0px 2.3rem;
+    margin: 0px auto 0.3rem auto;
+}
+img{
+    max-width: 100%;
+    height: 416px;
+    object-fit: cover;
+    border-radius: 0.6rem;
+}
+/*Texto na img*/
+h2{
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    left: 5.5rem;
+    bottom: 5.0rem;
+
+    font: bolder 4.0rem var(--font_padrao);
+    color: white;
+}
+span{
+    width: fit-content;/*width:fit-content para ficar do tamanho do container*/
+    margin-bottom: 2.0rem;
+
+    font: normal 1.6rem var(--font_padrao);
+    color: #090039;
+    padding: 10px;
+
+    background-color: white;
+    border-radius: 25px;
+}
+@media (min-width: 1111px){
+    main{
+        max-width: 1440px;
+        margin: 0px auto 100px auto;
+        
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .menor{
+        max-width: 470px;
+        height: 416px;
+        padding: 0px;
+        margin: 0px;
+
+        margin-bottom: 32px;
+        margin-left: 32px;
+    }
+    .maior{  
+        max-width: 670px;
+        height: 416px;
+        padding: 0px;
+        margin: 0px;
+
+        margin-bottom: 32px;
+        margin-left: 32px;
+    }
+}
+
